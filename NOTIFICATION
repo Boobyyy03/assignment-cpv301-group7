@@ -5,4 +5,22 @@ Abstract : Dùng OpenCV để phát hiện đối tượng và dùng model YOLOv
 update : đã có MODEL code mẫu (cần cải thiện thêm những thứ sau)
 -- Sử dụng camera (Yolov8 or OpenCV) done 
 -- viết 1 Funciton để ( nhân diện cử chỉ bằng OpenCV viết file khi chạy code chính sẽ add funciton đó vào code chính )
--- 
+• 
+• 
+• 
+-- viết 1 Funciton để ( nhận diện thủ ngữ "Ngôn ngữ kí kiệu bằng tay")
+Tư tưởng thuật toán nhận diện thủ ngữ
+Bài toán này mình sẽ làm theo các bước như sau nhé:
+1. Train:
+• Ta chuẩn bị sẵn các ảnh đầu vào là các ảnh bàn tay đang thực hiện các ký tự nói trên và lưu trong thư mục Data. Các ảnh được gân nhân đầy đủ bằng tên file.
+• Ta thực hiện chuyển các ảnh đó về size 224 x224 và đưa qua mạng VGG16 đã được thêm 1 vài layer Dense (Fully Connect) và cuối cùng là 1 lớp softmax đề dự đoán kết quả đầu ra.
+• Ta thực hiện train mạng của chúng ta với khoảng hơn 2000 ảnh train và gần 300 ảnh test.
+2. Chạy thử:
+• Ta thực hiện mở Webcam và khoanh 1 vùng sẽ phát hiện bàn tay ở trong vùng đó. Gọi là detection region.
+• Người dùng bỏ tay ra khỏi vùng detection region và nhấn phím B để máy thu nhận nén của vùng. Nếu muốn thu nhận lại nền, người dùng bấm phím R.
+• Người dùng đưa tay vào trong vùng detection (sau khi đã capture nén) và tạo thành các hình ký tự.
+• Model sẽ hiển thị ký tự ra màn hình.
+• Người dùng bấm Q để thoát
+bộ data có sẵn 5 kí tự trên 
+https://miai.vn/2019/09/30/xay-dung-he-thong-nhan-dien-thu-ngu-ngon-ngu-ky-hieu-tay-de-giao-tiep-voi-nguoi-khuyet-tat/ 
+youtube : https://www.youtube.com/watch?v=uVJEbDQ5a7M
