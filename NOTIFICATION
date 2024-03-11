@@ -1,4 +1,4 @@
-
+------------- CẤU TRÚC CỦA 1 commit message <type>: <description> [body] ---- ví dụ : fix: mô tả vấn đề cần fix ------
 CHỦ ĐỀ : OBJECT DETECTION 
 Nội Dung : Kết hợp YOLOv8 và OpenCV để nhận diện Person và các Other Object
 Abstract : Dùng OpenCV để phát hiện đối tượng và dùng model YOLOv8 để phát hiện, nhận dạng, phân loại đối tượng trong thời gian thực. 
