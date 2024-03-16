@@ -1,3 +1,4 @@
+----------------------Update ở dưới -----------------------
 ------------- CẤU TRÚC CỦA 1 commit message <type>: <description> [body] ---- ví dụ : fix: mô tả vấn đề cần fix ------
 CHỦ ĐỀ : OBJECT DETECTION 
 Nội Dung : Kết hợp YOLOv8 và OpenCV để nhận diện Person và các Other Object
@@ -5,9 +6,6 @@ Abstract : Dùng OpenCV để phát hiện đối tượng và dùng model YOLOv
 update : đã có MODEL code mẫu (cần cải thiện thêm những thứ sau)
 -- Sử dụng camera (Yolov8 or OpenCV) done 
 -- viết 1 Funciton để ( nhân diện cử chỉ bằng OpenCV viết file khi chạy code chính sẽ add funciton đó vào code chính )
-• 
-• 
-• 
 -- viết 1 Funciton để ( nhận diện thủ ngữ "Ngôn ngữ kí kiệu bằng tay")
 Tư tưởng thuật toán nhận diện thủ ngữ
 Bài toán này mình sẽ làm theo các bước như sau nhé:
@@ -24,3 +22,9 @@ Bài toán này mình sẽ làm theo các bước như sau nhé:
 bộ data có sẵn 5 kí tự trên 
 https://miai.vn/2019/09/30/xay-dung-he-thong-nhan-dien-thu-ngu-ngon-ngu-ky-hieu-tay-de-giao-tiep-voi-nguoi-khuyet-tat/ 
 youtube : https://www.youtube.com/watch?v=uVJEbDQ5a7M
+
+Github for FACE_RECOG : https://github.com/malik-aliyev-94/face-recognition-dlib-opencv
+
+
+
+
